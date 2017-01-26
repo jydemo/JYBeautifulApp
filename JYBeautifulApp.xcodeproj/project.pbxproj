@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3631EEFC4C8C6DA17C745CD5 /* Pods_JYBeautifulApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19243ABF7ECC5054F03D49DD /* Pods_JYBeautifulApp.framework */; };
 		691139521E3A3AAA00DD28E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691139511E3A3AAA00DD28E6 /* AppDelegate.swift */; };
 		691139541E3A3AAA00DD28E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691139531E3A3AAA00DD28E6 /* ViewController.swift */; };
 		691139571E3A3AAA00DD28E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 691139551E3A3AAA00DD28E6 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19243ABF7ECC5054F03D49DD /* Pods_JYBeautifulApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JYBeautifulApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		276DF46007ADE5875E965846 /* Pods-JYBeautifulApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYBeautifulApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JYBeautifulApp/Pods-JYBeautifulApp.debug.xcconfig"; sourceTree = "<group>"; };
 		6911394E1E3A3AAA00DD28E6 /* JYBeautifulApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYBeautifulApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		691139511E3A3AAA00DD28E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		691139531E3A3AAA00DD28E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		691139581E3A3AAA00DD28E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6911395B1E3A3AAA00DD28E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6911395D1E3A3AAA00DD28E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C782A52BD23CF7F1EAA279EB /* Pods-JYBeautifulApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYBeautifulApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-JYBeautifulApp/Pods-JYBeautifulApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3631EEFC4C8C6DA17C745CD5 /* Pods_JYBeautifulApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12EF1EA3F984A73142F95EA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				276DF46007ADE5875E965846 /* Pods-JYBeautifulApp.debug.xcconfig */,
+				C782A52BD23CF7F1EAA279EB /* Pods-JYBeautifulApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		691139451E3A3AAA00DD28E6 = {
 			isa = PBXGroup;
 			children = (
 				691139501E3A3AAA00DD28E6 /* JYBeautifulApp */,
 				6911394F1E3A3AAA00DD28E6 /* Products */,
+				12EF1EA3F984A73142F95EA5 /* Pods */,
+				9A8ED06EF943F7A2F174951B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = JYBeautifulApp;
 			sourceTree = "<group>";
 		};
+		9A8ED06EF943F7A2F174951B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19243ABF7ECC5054F03D49DD /* Pods_JYBeautifulApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 691139601E3A3AAA00DD28E6 /* Build configuration list for PBXNativeTarget "JYBeautifulApp" */;
 			buildPhases = (
+				913C2AD76321F4CCEE385BEC /* [CP] Check Pods Manifest.lock */,
 				6911394A1E3A3AAA00DD28E6 /* Sources */,
 				6911394B1E3A3AAA00DD28E6 /* Frameworks */,
 				6911394C1E3A3AAA00DD28E6 /* Resources */,
+				0F5D8B6E1E4F8108FDEE60E0 /* [CP] Embed Pods Frameworks */,
+				90B4718B9B0A3102404D2ABA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F5D8B6E1E4F8108FDEE60E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JYBeautifulApp/Pods-JYBeautifulApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90B4718B9B0A3102404D2ABA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JYBeautifulApp/Pods-JYBeautifulApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		913C2AD76321F4CCEE385BEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6911394A1E3A3AAA00DD28E6 /* Sources */ = {
@@ -256,6 +331,7 @@
 		};
 		691139611E3A3AAA00DD28E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 276DF46007ADE5875E965846 /* Pods-JYBeautifulApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JYBeautifulApp/Info.plist;
@@ -268,6 +344,7 @@
 		};
 		691139621E3A3AAA00DD28E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C782A52BD23CF7F1EAA279EB /* Pods-JYBeautifulApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JYBeautifulApp/Info.plist;
